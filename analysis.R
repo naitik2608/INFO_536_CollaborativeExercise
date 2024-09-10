@@ -10,3 +10,10 @@ gtd_data <- read.csv("globalterrorismdb_0718dist.csv",
 
 # Basic data exploration
 glimpse(gtd_data)
+
+
+#Seperating Successful vs unsuccessful attacks
+
+colnames(data)
+successful_attacks <- data[data$success == 1, ]
+unsuccessful_attacks <- data[data$success == 0, ]
